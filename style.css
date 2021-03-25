@@ -9,3 +9,29 @@ body {
 nav {
   display: inline;
 }
+
+.nav {
+  background-color: rgb(0, 0, 0);
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+#header {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 400px;
+  height: 400px;
+}
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
