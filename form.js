@@ -1,6 +1,7 @@
 function loadform() {
   //   clearPage();
   //   loadNav();
+  clearClicks();
   const index = document.getElementById("main");
 
   // let id = event.target.dataset.id;
@@ -48,29 +49,28 @@ function loadform() {
         `;
   index.innerHTML += html;
   document.querySelector("form").addEventListener("submit", () => {
-      createNew()
+    createNew();
   });
+  // document.getElementById("Order").addEventListener("click", clearForm);
+}
 
 const createNew = () => {
-    event.preventDefault()
-    const Appt = {
-            name: document.getElementById("name").value,
-            email: document.getElementById("email").value,
-            phone: document.getElementById("phone").value,
-            style: document.getElementById("stlye").value,
-            photo: document.getElementById("photo").value,
-            length: document.getElementById("length").value,
-            size: document.getElementById("size").value,
-            accessories: document.getElementById("accessories").value,
-            travel: document.getElementById("travel").value,
+  event.preventDefault();
+  const Appt = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    phone: document.getElementById("phone").value,
+    style: document.getElementById("stlye").value,
+    photo: document.getElementById("photo").value,
+    length: document.getElementById("length").value,
+    size: document.getElementById("size").value,
+    travel: document.getElementById("travel").value,
+  };
+};
 
-    }
-}
-
-
-  const
-  //  document.querySelector("form").addEventListener("submit", () => {
-  //    createChore(event, id);
-  //  }
-  //  );
-}
+//const
+//  document.querySelector("form").addEventListener("submit", () => {
+//    createChore(event, id);
+//  }
+//  );
+//}
