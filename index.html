@@ -5,22 +5,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <title>Document</title>
   </head>
   <body>
-    <div id="App">
-      <ul class="nav">
-        <li><a href="#home" id="Home"></a></li>
-        <li><a href="#order" id="Order"></a></li>
-        <li><a href="#about" id="About"></a></li>
-        <li><a href="#contact" id="Contact"></a></li>
-        <li><a href="#form" id="Form"></a></li>
-      </ul>
-
-      <div id="main"></div>
-      <script src="app.js"></script>
-      <script src="clearClicks.js"></script>
-      <script src="form.js"></script>
+    <!-- <div id="App"> -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#Home" id="Home">Home</a>
+      <a href="#Appt" id="Appt">Appointment</a>
+      <a href="#Contact" id="Contact">Contact</a>
+      <a href="#">Prices</a>
     </div>
+
+    <span
+      style="font-size: 30px; cursor: pointer; color: white"
+      onclick="openNav()"
+      >&#9776; Laced Studios
+    </span>
+    <div id="navv"></div>
+    <div id="main"></div>
+    <script src="app.js"></script>
+    <script src="clearClicks.js"></script>
+    <script src="form.js"></script>
+    <script src="nav.js"></script>
+    <!-- </div> -->
   </body>
 </html>

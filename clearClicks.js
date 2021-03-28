@@ -1,7 +1,7 @@
-const clearClicks = () => {
+function clearClicks() {
   document.getElementById("main").innerHTML = "";
-};
+}
 
-const clearForm = () => {
+function clearForm() {
   document.querySelector("form").innerHTML = "";
-};
+}

@@ -54,7 +54,7 @@ function loadform() {
   // document.getElementById("Order").addEventListener("click", clearForm);
 }
 
-const createNew = () => {
+function createNew() {
   event.preventDefault();
   const Appt = {
     name: document.getElementById("name").value,
@@ -64,9 +64,10 @@ const createNew = () => {
     photo: document.getElementById("photo").value,
     length: document.getElementById("length").value,
     size: document.getElementById("size").value,
+    accessories: document.getElementById("accessories").value,
     travel: document.getElementById("travel").value,
   };
-};
+}
 
 //const
 //  document.querySelector("form").addEventListener("submit", () => {

@@ -3,7 +3,7 @@
   color: aliceblue;
 }
 body {
-  /* background-color: black; */
+  background-color: black;
 }
 
 nav {
@@ -28,8 +28,8 @@ nav {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 300px;
 }
 a {
   color: aliceblue;
@@ -68,4 +68,87 @@ form {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+/* <<<===?>>>> */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #7f01fd;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+  #header {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#navcon {
+  position: absolute;
+  right: 150px;
+  width: 200px;
+  height: 120px;
+  /* border: 3px solid green; */
+}
+.photo {
+  background-color: white;
+}
+.contianer {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 300px 300px 300px;
+  /* grid-column-gap: 5px; */
+  /* grid-row-gap: 55px; */
+  /* grid-gap: 50px; */
+}
+#pic {
+  /* padding: 80px; */
+  width: 250px;
+  height: 320px;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
 }
