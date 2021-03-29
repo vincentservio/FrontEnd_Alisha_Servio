@@ -1,5 +1,6 @@
 function clearClicks() {
   document.getElementById("main").innerHTML = "";
+  // document.getElementById("header").innerHTML = "";
 }
 
 function clearForm() {

@@ -1,9 +1,11 @@
 function loadform() {
   //   clearPage();
   //   loadNav();
-  clearClicks();
-  const index = document.getElementById("main");
 
+  window.open("https://lacedstudiosnyc.as.me/schedule.php", "_blank");
+  clearClicks();
+
+  const index = document.getElementById("main");
   // let id = event.target.dataset.id;
   //  let cardFormDiv = document.getElementById("name-form");
   let html = `
@@ -47,10 +49,27 @@ function loadform() {
             <input type="submit"> 
         </form>
         `;
-  index.innerHTML += html;
-  document.querySelector("form").addEventListener("submit", () => {
-    createNew();
-  });
+
+  const redirect = `
+
+PLEASE READ THE FOLLOWING GUIDELINES FOR A SUCCESSFUL BOOKING ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+For your safety and mines please wear a mask.
+Payments for your service can be made to my cash app $Alisharose23 .
+Security deposit of $25 (the minimum) is required upon booking.
+NO refunds for no calls and no shows.
+Appointments have to be rescheduled atleast 24 hours in advance, if not your appointment will be canceled.
+Please come washed and blow dried
+If there is an issue with your hairstyle of choice, You have 3 days to address it. After 3 days I am no longer responsible.
+I also travel for my client’s convenience for a fee of $35.
+
+
+THANK YOU FOR BOOKING WITH LACED STUDIOS NYC 🧡🔥🏁
+        `;
+  index.innerHTML += redirect;
+  index.scrollIntoView();
+  // document.querySelector("form").addEventListener("submit", () => {
+  //   createNew();
+  // });
   // document.getElementById("Order").addEventListener("click", clearForm);
 }
 
