@@ -6,6 +6,7 @@ function navLinks() {
   document.getElementById("Appt").addEventListener("click", loadform);
   document.getElementById("Home").addEventListener("click", loadHome);
   document.getElementById("Contact").addEventListener("click", loadContact);
+  document.getElementById("Prices").addEventListener("click", loadPrices);
   // document.getElementById("About").addEventListener("click", loadAbout);
 }
 const appt = () => {
